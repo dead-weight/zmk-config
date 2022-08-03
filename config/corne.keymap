@@ -15,31 +15,37 @@
         Set_Bluetooth_1 {
             bindings = <&bt BT_SEL 0>;
             key-positions = <37 40 13>;
+            layers = <0 1 2>;
         };
 
         Set_Bluetooth_2 {
             bindings = <&bt BT_SEL 1>;
             key-positions = <37 40 14>;
+            layers = <0 1 2>;
         };
 
         Set_Bluetooth_3 {
             bindings = <&bt BT_SEL 2>;
             key-positions = <15 37 40>;
+            layers = <0 1 2>;
         };
 
         Set_Bluetooth_4 {
             bindings = <&bt BT_SEL 3>;
             key-positions = <16 37 40>;
+            layers = <0 1 2>;
         };
 
         Set_Bluetooth_5 {
             bindings = <&bt BT_SEL 4>;
             key-positions = <17 37 40>;
+            layers = <0 1 2>;
         };
 
         Clear_Bluetooth {
             bindings = <&bt BT_CLR>;
             key-positions = <12 37 40>;
+            layers = <0 1 2>;
         };
     };
 
