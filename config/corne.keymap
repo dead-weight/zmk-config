@@ -47,6 +47,11 @@
             key-positions = <12 37 40>;
             layers = <0 1 2>;
         };
+
+        new_combo {
+            bindings = <&kp PRINTSCREEN>;
+            key-positions = <37 40 24>;
+        };
     };
 
     keymap {
