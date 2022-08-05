@@ -23,13 +23,16 @@
     combos {
         compatible = "zmk,combos";
     };
-    
+
     behaviors {
         tabesc: tab_escape {
             compatible = "zmk,behavior-mod-morph";
             label = "TAB_ESCAPE";
             #binding-cells = <0>;
-            bindings = <&kp ESC>, <&kp TAB>;
+            bindings =
+                <&kp ESC>,
+                <&kp TAB>;
+
             mods = <(MOD_LALT,MOD_RALT)>;
         };
     };
@@ -45,10 +48,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-    &tabesc   &kp Q   &kp W           &kp E         &kp R      &kp T                   &kp Y   &kp U      &kp I    &kp O                  &kp P   &kp BSPC
-     &mo 2   &kp A   &kp S           &kp D         &kp F      &kp G                   &kp H   &kp J      &kp K    &kp L               &kp SEMI    &kp SQT
+   &tabesc   &kp Q   &kp W           &kp E         &kp R      &kp T                   &kp Y   &kp U      &kp I    &kp O                  &kp P   &kp BSPC
+     &mo 1   &kp A   &kp S           &kp D         &kp F      &kp G                   &kp H   &kp J      &kp K    &kp L               &kp SEMI    &kp SQT
  &kp LCTRL   &kp Z   &kp X           &kp C         &kp V      &kp B                   &kp N   &kp M  &kp COMMA  &kp DOT  &mt PRINTSCREEN SLASH  &kp ENTER
-                            &kp LEFT_SHIFT  &kp LEFT_ALT  &kp SPACE          &kp LEFT_SHIFT   &mo 1   &kp LGUI
+                            &kp LEFT_SHIFT  &kp LEFT_ALT  &kp SPACE          &kp LEFT_SHIFT   &mo 2   &kp LGUI
             >;
         };
 
@@ -60,10 +63,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
- &kp ESC  &kp N1  &kp N2  &kp N3         &kp N4     &kp N5            &kp N6    &kp N7         &kp N8     &kp N9           &kp N0       &kp DEL
-  &trans  &trans  &trans  &trans         &trans     &trans          &kp LEFT  &kp DOWN         &kp UP  &kp RIGHT           &trans  &kp QUESTION
-  &trans  &trans  &trans  &trans         &trans     &trans            &trans    &trans         &trans     &trans  &kp PRINTSCREEN        &trans
-                          &trans  &kp RIGHT_ALT  &kp SPACE           &kp RET    &trans  &kp RIGHT_ALT
+ &kp ESC  &trans  &trans  &trans         &trans     &trans           &trans    &trans    &kp UP_ARROW     &trans  &trans       &kp DEL
+  &trans  &trans  &trans  &trans         &trans     &trans           &trans  &kp DOWN  &kp DOWN_ARROW  &kp RIGHT  &trans  &kp QUESTION
+  &trans  &trans  &trans  &trans         &trans     &trans           &trans    &trans          &trans     &trans  &trans        &trans
+                          &trans  &kp RIGHT_ALT  &kp SPACE          &kp RET    &trans   &kp RIGHT_ALT
             >;
         };
 
@@ -75,7 +78,7 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-   &kp ESC  &trans  &trans    &trans         &trans     &trans                  &trans          &trans      &kp UP_ARROW           &kp LPAR       &kp RPAR       &kp DEL
+   &kp ESC  &kp N1  &kp N2    &kp N3         &kp N4     &kp N5                  &kp N6          &kp N7            &kp N8             &kp N9         &kp N0       &kp DEL
  &kp LCTRL  &trans  &trans    &trans         &trans     &trans          &kp UNDERSCORE  &kp LEFT_ARROW    &kp DOWN_ARROW    &kp RIGHT_ARROW       &kp BSLH  &kp QUESTION
     &trans  &trans  &trans    &trans         &trans     &trans               &kp MINUS        &kp PLUS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH     &kp GRAVE
                             &kp LGUI  &kp RIGHT_ALT  &kp SPACE                 &kp RET          &trans          &kp RALT
