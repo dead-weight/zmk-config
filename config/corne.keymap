@@ -33,7 +33,7 @@
                 <&kp ESC>,
                 <&kp TAB>;
 
-            mods = <(MOD_LALT|MOD_RALT)>;
+            mods = <(MOD_LALT|MOD_RALT|MOD_LSFT)>;
         };
     };
 
