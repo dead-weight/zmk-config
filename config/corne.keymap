@@ -25,12 +25,12 @@
     };
 
     behaviors {
-        tabesc: tab_escape {
+        tabesc: tab_escape_grave {
             compatible = "zmk,behavior-mod-morph";
-            label = "TAB_ESCAPE";
+            label = "TAB_ESCAPE_GRAVE";
             #binding-cells = <0>;
             bindings =
-                <&kp ESC>,
+                <&mt GRAVE ESC>,
                 <&kp TAB>;
 
             mods = <(MOD_LALT|MOD_RALT|MOD_LSFT)>;
