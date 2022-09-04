@@ -45,6 +45,17 @@
 
             mods = <(MOD_LCTL|MOD_RCTL)>;
         };
+        
+        lmt: long_mod_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LONG_MOD_TAP";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <600>;
+            quick-tap-ms = <200>;
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <1>;    // <---[[the W key]]
+        };
     };
 
     keymap {
@@ -60,7 +71,7 @@
             bindings = <
      &tabesc   &kp Q   &kp W           &kp E         &kp R      &kp T                   &kp Y   &kp U      &kp I    &kp O                  &kp P                 &kp BSPC
  &shiftlayer   &kp A   &kp S           &kp D         &kp F      &kp G                   &kp H   &kp J      &kp K    &kp L               &kp SEMI                  &kp SQT
-   &kp LCTRL   &kp Z   &kp X           &kp C         &kp V      &kp B                   &kp N   &kp M  &kp COMMA  &kp DOT  &mt PRINTSCREEN SLASH  &mt RIGHT_CONTROL ENTER
+   &kp LCTRL   &kp Z   &kp X           &kp C         &kp V      &kp B                   &kp N   &kp M  &kp COMMA  &kp DOT  &lmt PRINTSCREEN SLASH  &mt RIGHT_CONTROL ENTER
                               &kp LEFT_SHIFT  &kp LEFT_ALT  &kp SPACE          &kp LEFT_SHIFT   &mo 2   &kp LGUI
             >;
         };
