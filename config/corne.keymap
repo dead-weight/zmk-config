@@ -45,7 +45,6 @@
 
             mods = <(MOD_LCTL|MOD_RCTL)>;
         };
-        
         lmt: long_mod_tap {
             compatible = "zmk,behavior-hold-tap";
             label = "LONG_MOD_TAP";
@@ -53,16 +52,20 @@
             flavor = "hold-preferred";
             tapping-term-ms = <600>;
             quick-tap-ms = <200>;
-            bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = <1>;    // <---[[the W key]]
+            bindings =
+                <&kp>,
+                <&kp>;
+
+            hold-trigger-key-positions = <1>;// <---[[the W key]]
         };
-        
         l2l4: layer2_layer4 {
             compatible = "zmk,behavior-tap-dance";
             label = "LAYER2_LAYER4";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&mo 2>, <&mo 4>;
+            bindings =
+                <&mo 2>,
+                <&mo 4>;
         };
     };
 
@@ -77,8 +80,8 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-     &tabesc   &kp Q   &kp W           &kp E         &kp R      &kp T                   &kp Y   &kp U      &kp I    &kp O                  &kp P                 &kp BSPC
- &shiftlayer   &kp A   &kp S           &kp D         &kp F      &kp G                   &kp H   &kp J      &kp K    &kp L               &kp SEMI                  &kp SQT
+     &tabesc   &kp Q   &kp W           &kp E         &kp R      &kp T                   &kp Y   &kp U      &kp I    &kp O                   &kp P                 &kp BSPC
+ &shiftlayer   &kp A   &kp S           &kp D         &kp F      &kp G                   &kp H   &kp J      &kp K    &kp L                &kp SEMI                  &kp SQT
    &kp LCTRL   &kp Z   &kp X           &kp C         &kp V      &kp B                   &kp N   &kp M  &kp COMMA  &kp DOT  &lmt PRINTSCREEN SLASH  &mt RIGHT_CONTROL ENTER
                               &kp LEFT_SHIFT  &kp LEFT_ALT  &kp SPACE          &kp LEFT_SHIFT   &l2l4   &kp LGUI
             >;
@@ -92,10 +95,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
- &trans  &kp N1  &kp N2  &kp N3         &kp N4     &kp N5          &trans    &trans    &kp UP_ARROW     &trans  &trans  &trans
- &trans  &trans  &trans  &trans         &trans     &trans          &trans  &kp DOWN  &kp DOWN_ARROW  &kp RIGHT  &trans  &trans
- &trans  &trans  &trans  &trans         &trans     &trans          &trans    &trans          &trans     &trans  &trans  &trans
-                         &trans  &kp RIGHT_ALT  &kp SPACE          &trans    &trans   &kp RIGHT_ALT
+ &trans  &kp N1  &kp N2  &kp N3         &kp N4     &kp N5          &kp N6  &kp N7         &kp N8  &kp N9  &kp N0  &trans
+ &trans  &trans  &trans  &trans         &trans     &trans          &trans  &trans         &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans         &trans     &trans          &trans  &trans         &trans  &trans  &trans  &trans
+                         &trans  &kp RIGHT_ALT  &kp SPACE          &trans  &trans  &kp RIGHT_ALT
             >;
         };
 
@@ -116,10 +119,19 @@
 
         Then_Layer {
             bindings = <
-          &trans        &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &kp C_VOL_UP
-          &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4          &trans  &trans  &trans  &trans  &trans  &kp C_VOL_DN
- &kp PRINTSCREEN        &trans        &trans        &trans        &trans    &bt BT_CLR          &trans  &trans  &trans  &trans  &trans    &kp C_MUTE
+          &trans        &kp F1        &kp F2        &kp F3        &kp F4        &kp F5          &kp F6  &kp F7  &kp F8   &kp F9  &kp F10  &kp C_VOL_UP
+          &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4          &trans  &trans  &trans  &kp F11  &kp F12  &kp C_VOL_DN
+ &kp PRINTSCREEN        &trans        &trans        &trans        &trans    &bt BT_CLR          &trans  &trans  &trans   &trans   &trans    &kp C_MUTE
                                                     &trans        &trans        &trans          &trans  &trans  &trans
+            >;
+        };
+
+        FNs {
+            bindings = <
+ &trans  &trans  &trans  &trans  &trans  &trans          &trans          &trans    &kp UP_ARROW           &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans          &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans          &trans          &trans          &trans           &trans  &trans  &trans
+                         &trans  &trans  &trans          &trans          &trans          &trans
             >;
         };
     };
