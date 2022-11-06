@@ -66,13 +66,51 @@
                 <&mo 4>;
         };
         space_shift: space_shift {
-            compatible = "zmk,behavior-tap-dance";
+            compatible = "zmk,behavior-hold-tap";
             label = "space_shift";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp SPACE>, <&kp LEFT_SHIFT>;
-        };
-    };
+            quick-tap-ms = <125>;
+            bindings = <&kp SPACE>, <&kp LEFT_SHIFT>; 
+        }; 
+        
+        bksp_l2: bksp_l2 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "bksp_l2";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <125>;
+            bindings = <&kp BSPC>, <&mo 2>; 
+        };  
+        
+        vvin_alt: vvin_alt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "vvin_alt";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <125>;
+            bindings = <&kp LGUI>, <&kp MOD_LALT>; 
+        };  
+        
+        enter_ctrl: enter_ctrl {
+            compatible = "zmk,behavior-hold-tap";
+            label = "enter_ctrl";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <125>;
+            bindings = <&kp LCTRL>, <&kp ENTER>; 
+        }; 
+        
+        space_ctrl: enter_ctrl {
+            compatible = "zmk,behavior-hold-tap";
+            label = "enter_ctrl";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <125>;
+            bindings = <&kp SPACE>, <&kp LCTRL>; 
+        };        
+                
+        
 
     keymap {
         compatible = "zmk,keymap";
@@ -85,10 +123,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-     &tabesc   &kp Q   &kp Q          &kp E         &kp R      &kp T                   &kp Y   &kp U      &kp I    &kp O                   &kp P                 &kp BSPC
+     &tabesc   &kp Q   &kp W          &kp E         &kp R      &kp T                   &kp Y   &kp U      &kp I    &kp O                   &kp P                 &kp BSPC
  &shiftlayer   &kp A   &kp S           &kp D         &kp F      &kp G                   &kp H   &kp J      &kp K    &kp L                &kp SEMI                  &kp SQT
    &kp LCTRL   &kp Z   &kp X           &kp C         &kp V      &kp B                   &kp N   &kp M  &kp COMMA  &kp DOT  &lmt PRINTSCREEN SLASH  &mt RIGHT_CONTROL ENTER
-                              &kp LEFT_SHIFT  &kp LEFT_ALT  &kp SPACE          &space_shift   &l2l4   &kp LGUI
+                              &kp LEFT_SHIFT  &vvin_alt  &space_ctrl          &space_shift   &bksp_l2   &enter_ctrl
             >;
         };
 
