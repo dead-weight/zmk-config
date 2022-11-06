@@ -65,6 +65,14 @@
             bindings = <&mo>,<&kp>;
 
         };
+        td0: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_0";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp shift>, <&kp N2>, <&kp N3>;
+        };
+    };
 
       };          
         
@@ -126,13 +134,6 @@
             >;
         };
 
-        FNs {
-            bindings = <
- &trans  &trans  &trans  &trans  &trans  &trans          &trans          &trans    &kp UP_ARROW           &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans          &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans          &trans          &trans          &trans           &trans  &trans  &trans
-                         &trans  &trans  &trans          &trans          &trans          &trans
-            >;
-        };
+        FNs { bindings = < &trans &kp Y &kp U &kp I &kp O &kp P &trans &trans &kp UP_ARROW &trans &trans &trans &trans &kp H &kp J &kp K &kp L &trans &trans &kp LEFT_ARROW &kp DOWN_ARROW &kp RIGHT_ARROW &trans &trans &trans &kp N &kp M &kp COMMA &kp DOT &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans >; };
     };
 };
