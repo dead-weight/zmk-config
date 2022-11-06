@@ -63,9 +63,7 @@
             flavor = "hold-preferred";
             tapping-term-ms = <400>;
             quick-tap-ms = <200>;
-            bindings =
-                <&kp>,
-                <&mo>;
+            bindings = <&mo>,<&kp>;
 
             hold-trigger-key-positions = <1>;// <---[[the W key]]
         };
@@ -87,7 +85,7 @@
      &tabesc   &kp Q   &kp W          &kp E         &kp R      &kp T                   &kp Y   &kp U      &kp I    &kp O                   &kp P                 &kp BSPC
  &shiftlayer   &kp A   &kp S           &kp D         &kp F      &kp G                   &kp H   &kp J      &kp K    &kp L                &kp SEMI                  &kp SQT
    &kp LCTRL   &kp Z   &kp X           &kp C         &kp V      &kp B                   &kp N   &kp M  &kp COMMA  &kp DOT  &lmt PRINTSCREEN SLASH  &mt RIGHT_CONTROL ENTER
-                              &kp LEFT_SHIFT  &lmt LGUI MOD_LALT  &lmt SPACE LCTRL          &lmt SPACE LEFT_SHIFT    &lmo BSPC 2    &lmt ENTER LCTRL
+                              &kp LEFT_SHIFT  &lmt MOD_LALT LGUI &lmt LCTRL SPACE          &lmt LEFT_SHIFT SPACE   &lmo 2 BSPC    &lmt LCTRL ENTER
             >;
         };
 
