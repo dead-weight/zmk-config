@@ -101,9 +101,9 @@
             bindings = <&kp LCTRL>, <&kp ENTER>; 
         }; 
         
-        space_ctrl: enter_ctrl {
+        space_ctrl: space_ctrl {
             compatible = "zmk,behavior-hold-tap";
-            label = "enter_ctrl";
+            label = "space_ctrl";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             quick-tap-ms = <125>;
