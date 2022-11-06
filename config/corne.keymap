@@ -34,6 +34,7 @@
                 <&kp TAB>;
 
             mods = <(MOD_LALT|MOD_RALT|MOD_LSFT)>;
+            keep-mods = <(MOD_LALT|MOD_RALT)>;
         };
         shiftlayer: shift_layer {
             compatible = "zmk,behavior-mod-morph";
