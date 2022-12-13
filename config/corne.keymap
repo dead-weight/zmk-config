@@ -147,10 +147,10 @@
 
         Layer__5 {
             bindings = <
- &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                         &trans  &trans  &trans          &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans           &trans             &trans            &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans           &trans             &trans            &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &kp K_VOLUME_UP  &kp K_VOLUME_DOWN  &kp K_PLAY_PAUSE  &trans
+                         &trans  &trans  &trans          &trans  &trans           &trans
             >;
         };
     };
