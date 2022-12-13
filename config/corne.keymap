@@ -144,5 +144,14 @@
                             &trans   &trans        &trans          &trans          &trans          &trans
             >;
         };
+
+        Layer__5 {
+            bindings = <
+ &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                         &trans  &trans  &trans          &trans  &trans  &trans
+            >;
+        };
     };
 };
