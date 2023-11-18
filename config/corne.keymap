@@ -52,6 +52,14 @@
             bindings = <&mo 2>, <&mo 4>;
         };
 
+        l6l4: layer6_layer4 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "LAYER2_LAYER4";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mo 6>, <&mo 4>;
+        };
+
         lmt: long_mod_tap {
             compatible = "zmk,behavior-hold-tap";
             label = "LONG_MOD_TAP";
