@@ -94,7 +94,7 @@
         Layer_0 {
             bindings = <
 &kp LEFT_GUI    &kp Q  &kp W  &kp E          &kp R      &kp T        &kp Y          &kp U        &kp I         &kp O    &kp P          &kp BACKSLASH
-&mt LALT CAPS   &kp A  &kp S  &kp D          &kp F      &kp G        &kp H          &kp J        &kp K         &kp L    &kp SEMICOLON  &kp QUOTE
+&mt LALT CAPS   &kp A  &kp S  &kp D          &kp F      &kp G        &kp H          &kp J        &kp K         &kp L    &kp SEMICOLON  &kp SINGLE_QUOTE
 &kp LEFT_SHIFT  &kp Z  &kp X  &kp C          &kp V      &kp B        &kp N          &kp M        &kp COMMA     &kp DOT  &kp SLASH      &kp RIGHT_SHIFT
                               &mt LCTRL ESC  &lt 1 TAB  &kp SPACE    &kp BACKSPACE  &lt 2 ENTER  &lt 3 DELETE
             >;
@@ -111,19 +111,19 @@
 
         Layer_2 {
             bindings = <
-&kp GRAVE       &kp EXCLAMATION  &kp AMPERSAND   &kp PIPE       &kp LEFT_PAREN        &kp RIGHT_PAREN          &kp PLUS       &kp 7   &kp 8       &kp 9  &kp 0   &kp DOT
-&kp TILDE       &kp AT           &kp ASTERISK    &kp PERCENT    &kp LEFT_BRACKET      &kp RIGHT_BRACKET        &kp MINUS      &kp 4   &kp 5       &kp 6  &trans  &trans
-&kp UNDERSCORE  &kp HASH         &kp CIRCUMFLEX  &kp DOLLAR     &kp LEFT_CURLY_BRACE  &kp RIGHT_CURLY_BRACE    &kp EQUAL      &kp 1   &kp 2       &kp 3  &trans  &trans
-                                                 &kp LESS_THAN  &kp GREATER_THAN      &kp SPACE                &kp BACKSPACE  &trans  &kp DELETE
+&kp GRAVE       &kp EXCLAMATION  &kp AMPERSAND  &kp PIPE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp PLUS       &kp N7        &kp N8        &kp N9        &kp N0  &kp DOT
+&kp TILDE       &kp AT           &kp ASTERISK   &kp PERCENT    &kp LEFT_BRACKET      &kp RIGHT_BRACKET        &kp MINUS      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans  &trans
+&kp UNDERSCORE  &kp HASH         &kp CARET      &kp DOLLAR     &kp LEFT_BRACE        &kp RIGHT_BRACE          &kp EQUAL      &kp N1        &kp NUMBER_2  &kp NUMBER_3  &trans  &trans
+                                                &kp LESS_THAN  &kp GREATER_THAN      &kp SPACE                &kp BACKSPACE  &trans        &kp DELETE
             >;
         };
 
         TLayer_3 {
             bindings = <
-&kp LEFT_GUI    &trans     &kp WH_LEFT     &kp MOUSE_UP    &kp WH_RIGHT     &kp WH_UP      &kp HOME    &kp BTN1        &kp UP_ARROW    &kp BTN2         &kp PG_UP    &kp WH_UP
-&kp LALT        &trans     &kp MOUSE_LEFT  &kp MOUSE_DOWN  &kp MOUSE_RIGHT  &kp WH_DOWN    &kp END     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PG_DOWN  &kp WH_DOWN
-&kp LEFT_SHIFT  &kp LCTRL  &trans          &trans          &trans           &kp PAUSE      &kp INSERT  &kp BTN4        &kp BTN3        &kp BTN5         &trans       &trans
-                                           &mt LCTRL ESC   &kp TAB          &kp SPACE      &trans      &trans          &trans
+&kp LEFT_GUI    &trans     &trans  &kp MOUSE_UP    &kp WH_RIGHT     &kp WH_UP      &kp HOME    &kp BTN1        &kp UP_ARROW    &kp BTN2         &kp PG_UP      &kp WH_UP
+&kp LALT        &trans     &trans  &kp MOUSE_DOWN  &kp MOUSE_RIGHT  &kp WH_DOWN    &kp END     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN  &kp WH_DOWN
+&kp LEFT_SHIFT  &kp LCTRL  &trans  &trans          &trans           &kp PAUSE      &kp INSERT  &kp BTN4        &kp BTN3        &kp BTN5         &trans         &trans
+                                   &mt LCTRL ESC   &kp TAB          &kp SPACE      &trans      &trans          &trans
             >;
         };
     };
