@@ -120,10 +120,10 @@
 
         TLayer_3 {
             bindings = <
-                &kp LEFT_GUI    &trans     &trans   &trans    &trans    &trans          &kp HOME    &trans          &kp UP_ARROW    &trans          &kp PG_UP      &trans
-                &kp LALT        &trans     &trans   &trans    &trans    &trans          &kp END     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW &kp PAGE_DOWN  &trans
-                &kp LEFT_SHIFT  &kp LCTRL  &trans   &trans    &trans    &kp C_PP        &kp INSERT  &trans          &trans          &trans          &trans         &trans
-                                            &mt LCTRL ESC    &kp TAB    &kp SPACE       &trans      &trans          &trans
+&kp LEFT_GUI    &trans     &trans  &trans         &trans   &trans       &kp HOME    &trans        &trans          &trans           &kp PG_UP      &trans
+&kp LALT        &trans     &trans  &trans         &trans   &trans       &kp LEFT    &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN  &trans
+&kp LEFT_SHIFT  &kp LCTRL  &trans  &trans         &trans   &kp C_PP     &kp INSERT  &trans        &trans          &trans           &trans         &trans
+                                   &mt LCTRL ESC  &kp TAB  &kp SPACE    &trans      &trans        &trans
             >;
         };
     };
