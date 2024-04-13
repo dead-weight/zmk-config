@@ -111,9 +111,9 @@
 
         TLayer_3 {
             bindings = <
-&tabesc         &trans     &trans  &trans        &trans   &trans       &kp HOME  &trans    &trans        &trans           &kp PG_UP      &trans
-&kp LALT        &trans     &trans  &trans        &trans   &trans       &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN  &trans
-&kp LEFT_SHIFT  &kp LCTRL  &trans  &trans        &trans   &kp C_PP     &kp END   &trans    &trans        &trans           &trans         &trans
+&tabesc         &trans     &trans  &trans        &trans   &trans       &kp HOME  &trans    &trans    &trans  &kp PG_UP  &trans
+&kp LALT        &trans     &trans  &trans        &trans   &trans       &none     &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans
+&kp LEFT_SHIFT  &kp LCTRL  &trans  &trans        &trans   &kp C_PP     &kp END   &trans    &trans    &trans  &trans     &trans
                                    &mt LGUI ESC  &kp TAB  &kp SPACE    &trans    &trans    &trans
             >;
         };
